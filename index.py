@@ -11,6 +11,8 @@ def generate_qrCode(text):
   qr.add_data(text)
   qr.make(fit = True)
   img = qr.make_image(fill_color="black", back_color="white")
-  img.save("qrcode.png")
+  img.save("qrimg001.png")
 
-generate_qrCode("https://bloguzb.netlify.app")
+url = input("input your url: ")
+
+generate_qrCode(url)
